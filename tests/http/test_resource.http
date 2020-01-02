@@ -1,0 +1,11 @@
+GET http://localhost:5123/
+Accept: application/json
+
+###
+GET http://localhost:5123/1
+Accept: application/json
+
+###
+OPTIONS http://localhost:5123/
+
+###
