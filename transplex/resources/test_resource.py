@@ -1,6 +1,8 @@
 from flask import Blueprint
 from flask import make_response
 from flask import abort
+from plexapi.myplex import MyPlexAccount
+
 
 test_resource = Blueprint('test_resource', __name__)
 
@@ -34,7 +36,17 @@ def not_found_exception(e):
 
 @test_resource.route("/", methods=("GET",))
 def list_all():
-    return "HELLO WORLD @ ROOT!"
+    """
+    Lets list all libraries in Plex
+    :return:
+    """
+    items = list()
+    account = MyPlexAccount('centurix', 'hwmabohgrotpobam')
+    plex = account.resource('CinePlex').connect()
+    for section in plex.library.sections():
+        items.append(section.title)
+
+    return '\n'.join(items)
 
 
 @test_resource.route("/<resource_id>", methods=("GET",))

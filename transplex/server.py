@@ -47,8 +47,20 @@ def capture_signals():
 
 @click.command()
 @click.option("-i", "--interactive", default=False, is_flag=True, help="Interactive")
-@click.option("-b", "--bind", default="127.0.0.1", help="Bound interface")
-@click.option("-p", "--port", default=5123, help="Bound port")
+@click.option(
+    "-b",
+    "--bind",
+    envvar="TRANSPLEX_BIND",
+    default="127.0.0.1",
+    help="Bound interface"
+)
+@click.option(
+    "-p",
+    "--port",
+    envvar="TRANSPLEX_PORT",
+    default=5123,
+    help="Bound port"
+)
 def main(interactive, bind, port):
     """
     Add a rotating log handler and start the main thread plus interactive
@@ -61,7 +73,11 @@ def main(interactive, bind, port):
     server = TransplexThread(bind, port)
     server.start()
 
-    click.echo(f"Server started at http://{bind}:{port}")
+    click.echo(
+        f"Starting {click.style('Trans', fg='red', bold=True)}"
+        f"PLE{click.style('X', fg='yellow', bold=True)} "
+        f"at http://{bind}:{port}"
+    )
 
     if interactive:
         console_app = ConsoleApp(server)

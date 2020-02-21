@@ -26,3 +26,9 @@ Todo
 * Frontend
 * Docker build
 * Pypi publish
+
+API
+===
+
+/libraries
+/items

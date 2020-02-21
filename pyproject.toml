@@ -10,6 +10,10 @@ click = "^7.0"
 requests = "^2.22.0"
 flask = "^1.1.1"
 cmd2 = "^0.9.22"
+colorama = "^0.4.3"
+PlexAPI = "^3.3.0"
+tqdm = "^4.42.1"
+websocket-client = "^0.57.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^4.6"
