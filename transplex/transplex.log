@@ -1,7 +1,33 @@
-127.0.0.1 - - [19/Feb/2020 23:36:05] "GET / HTTP/1.1" 500 -
-127.0.0.1 - - [19/Feb/2020 23:36:35] "GET / HTTP/1.1" 500 -
-127.0.0.1 - - [19/Feb/2020 23:37:20] "GET / HTTP/1.1" 500 -
-127.0.0.1 - - [19/Feb/2020 23:55:02] "GET / HTTP/1.1" 500 -
-127.0.0.1 - - [19/Feb/2020 23:56:50] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [19/Feb/2020 23:58:11] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [20/Feb/2020 00:01:05] "GET / HTTP/1.1" 200 -
+INFO:root:Starting TransPLEX with False, 127.0.0.1, 5123
+INFO:plexapi:Testing 6 resource connections..
+ERROR:plexapi:http://172.104.180.126:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+ERROR:plexapi:https://172-104-180-126.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:8443: HTTPSConnectionPool(host='172-104-180-126.d0e6a50c23c54bcc8394cb08af09a162.plex.direct', port=8443): Read timed out. (read timeout=30)
+INFO:plexapi:Resource connection OK (1s): https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (1s): https://110-141-224-71.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection ERR (30s): https://172-104-180-126.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:8443?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (1s): http://192.168.86.100:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (2s): http://110.141.224.71:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection ERR (0s): http://172.104.180.126:8443?X-Plex-Token=<hidden>
+INFO:plexapi:Connecting to Resource: https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+127.0.0.1 - - [21/Feb/2020 23:34:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2020 23:34:10] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [21/Feb/2020 23:34:11] "GET /favicon.ico HTTP/1.1" 405 -
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2020 23:34:11] "GET /favicon.ico HTTP/1.1" 405 -
+127.0.0.1 - - [21/Feb/2020 23:34:12] "GET /1 HTTP/1.1" 405 -
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2020 23:34:12] "GET /1 HTTP/1.1" 405 -
+127.0.0.1 - - [21/Feb/2020 23:34:53] "GET /1 HTTP/1.1" 405 -
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2020 23:34:53] "GET /1 HTTP/1.1" 405 -
+INFO:root:Starting TransPLEX with False, 127.0.0.1, 5123
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2020 23:35:11] "GET /1 HTTP/1.1" 405 -
+INFO:plexapi:Testing 6 resource connections..
+ERROR:plexapi:http://172.104.57.184:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+ERROR:plexapi:https://172-104-57-184.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:8443: HTTPSConnectionPool(host='172-104-57-184.d0e6a50c23c54bcc8394cb08af09a162.plex.direct', port=8443): Read timed out. (read timeout=30)
+INFO:plexapi:Resource connection OK (0s): https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): https://110-141-224-71.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection ERR (30s): https://172-104-57-184.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:8443?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): http://192.168.86.100:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): http://110.141.224.71:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection ERR (0s): http://172.104.57.184:8443?X-Plex-Token=<hidden>
+INFO:plexapi:Connecting to Resource: https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2020 23:35:50] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2020 23:35:50] "GET /favicon.ico HTTP/1.1" 405 -

@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 import click
 import signal
+import platform
+import logging
 from console import ConsoleApp
 from transplex.transplex_thread import TransplexThread
 from transplex.transplex_log_handler import set_log_handler
@@ -36,13 +38,14 @@ def stop_server(signal_number, frame):
 def capture_signals():
     """
     Capture Linux signals to exit the non-interactive server
-    TODO: Make this respond to Windows signals
-    :return:
     """
+    # Both Linux and Windows signals
     signal.signal(signal.SIGINT, stop_server)
     signal.signal(signal.SIGTERM, stop_server)
-    signal.signal(signal.SIGQUIT, stop_server)
-    signal.signal(signal.SIGHUP, stop_server)
+
+    if platform.system() == "Linux":  # Linux only
+        signal.signal(signal.SIGQUIT, stop_server)
+        signal.signal(signal.SIGHUP, stop_server)
 
 
 @click.command()
@@ -70,12 +73,15 @@ def main(interactive, bind, port):
     global server_semaphore
     set_log_handler("transplex.log")
 
+    logging.info(f"Starting TransPLEX with {interactive}, {bind}, {port}")
+
     server = TransplexThread(bind, port)
     server.start()
 
     click.echo(
         f"Starting {click.style('Trans', fg='red', bold=True)}"
         f"PLE{click.style('X', fg='yellow', bold=True)} "
+        f"on {platform.system()} "
         f"at http://{bind}:{port}"
     )
 
