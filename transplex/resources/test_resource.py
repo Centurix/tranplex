@@ -1,7 +1,7 @@
 from flask import Blueprint
 from flask import make_response
 from flask import abort
-from plexapi.myplex import MyPlexAccount
+from flask import current_app
 
 
 test_resource = Blueprint('test_resource', __name__)
@@ -41,8 +41,8 @@ def list_all():
     :return:
     """
     items = list()
-    account = MyPlexAccount('centurix', 'hwmabohgrotpobam')
-    plex = account.resource('CinePlex').connect()
+    plex = current_app.plex_resource
+
     for section in plex.library.sections():
         items.append(section.title)
 

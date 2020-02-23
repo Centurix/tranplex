@@ -31,3 +31,64 @@ INFO:plexapi:Resource connection ERR (0s): http://172.104.57.184:8443?X-Plex-Tok
 INFO:plexapi:Connecting to Resource: https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
 INFO:werkzeug:127.0.0.1 - - [21/Feb/2020 23:35:50] "GET / HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [21/Feb/2020 23:35:50] "GET /favicon.ico HTTP/1.1" 405 -
+INFO:root:Starting TransPLEX with False, 127.0.0.1, 5123
+INFO:root:Starting TransPLEX with False, 127.0.0.1, 5123
+INFO:plexapi:Testing 6 resource connections..
+ERROR:plexapi:http://172.104.62.76:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+INFO:plexapi:Resource connection OK (0s): https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): https://110-141-224-71.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (6s): https://172-104-62-76.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:8443?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): http://192.168.86.100:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): http://110.141.224.71:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection ERR (0s): http://172.104.62.76:8443?X-Plex-Token=<hidden>
+INFO:plexapi:Connecting to Resource: https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 15:52:25] "GET / HTTP/1.1" 200 -
+INFO:root:Starting TransPLEX with False, 127.0.0.1, 5123
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 15:54:02] "GET /1 HTTP/1.1" 405 -
+INFO:plexapi:Testing 6 resource connections..
+ERROR:plexapi:http://139.162.15.38:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+INFO:plexapi:Resource connection OK (0s): https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): https://110-141-224-71.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (1s): https://139-162-15-38.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:8443?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): http://192.168.86.100:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): http://110.141.224.71:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection ERR (0s): http://139.162.15.38:8443?X-Plex-Token=<hidden>
+INFO:plexapi:Connecting to Resource: https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:root:Starting TransPLEX with False, 127.0.0.1, 5123
+INFO:root:Starting TransPLEX with False, 127.0.0.1, 5123
+INFO:root:Starting TransPLEX with False, 127.0.0.1, 5123
+INFO:root:Starting TransPLEX with False, 127.0.0.1, 5123
+INFO:root:Starting TransPLEX with False, 127.0.0.1, 5123
+INFO:root:Starting TransPLEX with False, 127.0.0.1, 5123
+INFO:root:Starting TransPLEX with False, 127.0.0.1, 5123
+INFO:root:Starting TransPLEX with False, 127.0.0.1, 5123
+INFO:root:Starting TransPLEX with False, 127.0.0.1, 5123
+INFO:root:Starting TransPLEX with False, 127.0.0.1, 5123
+INFO:root:Starting TransPLEX with False, 127.0.0.1, 5123
+ERROR:root:Cannot connect to plex: (401) unauthorized https://plex.tv/users/sign_in.xml; <?xml version="1.0" encoding="UTF-8"?> <errors>   <error>You appear to be having trouble signing in to an account. You may wish to try resetting your password at https://plex.tv/reset</error> </errors> 
+INFO:root:Starting TransPLEX with False, 127.0.0.1, 5123
+ERROR:root:Cannot connect to plex: (401) unauthorized https://plex.tv/users/sign_in.xml; <?xml version="1.0" encoding="UTF-8"?> <errors>   <error>You appear to be having trouble signing in to an account. You may wish to try resetting your password at https://plex.tv/reset</error> </errors> 
+INFO:root:Starting TransPLEX with False, 127.0.0.1, 5123
+INFO:root:Starting TransPLEX with False, 127.0.0.1, 5123
+INFO:plexapi:Testing 6 resource connections..
+ERROR:plexapi:http://172.104.57.184:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+INFO:plexapi:Resource connection OK (0s): https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): https://110-141-224-71.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (7s): https://172-104-57-184.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:8443?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): http://192.168.86.100:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): http://110.141.224.71:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection ERR (0s): http://172.104.57.184:8443?X-Plex-Token=<hidden>
+INFO:plexapi:Connecting to Resource: https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:root:Connecting to PLEX server CinePlex with user centurix
+INFO:root:Starting TransPLEX with False, 127.0.0.1, 5123
+INFO:plexapi:Testing 6 resource connections..
+ERROR:plexapi:http://172.104.57.184:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+INFO:plexapi:Resource connection OK (0s): https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): https://110-141-224-71.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): https://172-104-57-184.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:8443?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): http://192.168.86.100:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): http://110.141.224.71:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection ERR (0s): http://172.104.57.184:8443?X-Plex-Token=<hidden>
+INFO:plexapi:Connecting to Resource: https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:root:Connecting to PLEX server CinePlex with user centurix
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 16:22:04] "GET / HTTP/1.1" 200 -

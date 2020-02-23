@@ -6,6 +6,7 @@ import logging
 from console import ConsoleApp
 from transplex.transplex_thread import TransplexThread
 from transplex.transplex_log_handler import set_log_handler
+from plexapi.exceptions import BadRequest
 
 """
 Transplex: Transfer files from a Plex library to a USB drive
@@ -64,7 +65,28 @@ def capture_signals():
     default=5123,
     help="Bound port"
 )
-def main(interactive, bind, port):
+@click.option(
+    "-u",
+    "--user",
+    envvar="TRANSPLEX_USER",
+    default="",
+    help="Plex Username"
+)
+@click.option(
+    "-s",
+    "--password",
+    envvar="TRANSPLEX_PASSWORD",
+    default="",
+    help="Plex Password"
+)
+@click.option(
+    "-e",
+    "--server",
+    envvar="TRANSPLEX_SERVER",
+    default="",
+    help="Plex Server"
+)
+def main(interactive, bind, port, user, password, server):
     """
     Add a rotating log handler and start the main thread plus interactive
     console if needed
@@ -75,28 +97,32 @@ def main(interactive, bind, port):
 
     logging.info(f"Starting TransPLEX with {interactive}, {bind}, {port}")
 
-    server = TransplexThread(bind, port)
-    server.start()
+    try:
+        server = TransplexThread(bind, port, user, password, server)
+        server.start()
 
-    click.echo(
-        f"Starting {click.style('Trans', fg='red', bold=True)}"
-        f"PLE{click.style('X', fg='yellow', bold=True)} "
-        f"on {platform.system()} "
-        f"at http://{bind}:{port}"
-    )
+        click.echo(
+            f"Starting {click.style('Trans', fg='red', bold=True)}"
+            f"PLE{click.style('X', fg='yellow', bold=True)} "
+            f"on {platform.system()} "
+            f"at http://{bind}:{port}"
+        )
 
-    if interactive:
-        console_app = ConsoleApp(server)
-        console_app.cmdloop()
-    else:
-        capture_signals()
-        while server_semaphore:
-            pass
+        if interactive:
+            console_app = ConsoleApp(server)
+            console_app.cmdloop()
+        else:
+            capture_signals()
+            while server_semaphore:
+                pass
 
-        server.shutdown()
+            server.shutdown()
 
-    click.echo("Server stopped")
-    raise click.exceptions.Exit(EXIT_OK)
+        click.echo("Server stopped")
+        raise click.exceptions.Exit(EXIT_OK)
+    except BadRequest as br:
+        logging.error(f"Cannot connect to plex: {br}")
+        raise click.exceptions.Exit(EXIT_OTHER_ERROR)
 
 
 if __name__ == "__main__":
