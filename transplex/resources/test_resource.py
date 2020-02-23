@@ -14,7 +14,7 @@ How to properly send information from transformers
 """
 
 
-@test_resource.route("/", methods=("OPTION",))
+@test_resource.route("/test", methods=("OPTION",))
 def preflight():
     response = make_response()
     response.headers.add("Access-Control-Allow-Origin", "*")
@@ -34,7 +34,7 @@ def not_found_exception(e):
     return "NOT FOUND"
 
 
-@test_resource.route("/", methods=("GET",))
+@test_resource.route("/test", methods=("GET",))
 def list_all():
     """
     Lets list all libraries in Plex
@@ -49,7 +49,7 @@ def list_all():
     return '\n'.join(items)
 
 
-@test_resource.route("/<resource_id>", methods=("GET",))
+@test_resource.route("/test/<resource_id>", methods=("GET",))
 def return_one(resource_id):
     abort(405, "Resource not found")
     return f"THIS IS ONE RESOURCE FOR {resource_id}"

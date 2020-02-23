@@ -10,9 +10,13 @@ from plexapi.myplex import MyPlexAccount
 
 
 class TransplexThread(threading.Thread):
+    def static_content(self):
+        return self._app.send_static_file("index.html")
+
     def __init__(self, host, port, plex_user, plex_password, plex_server):
         threading.Thread.__init__(self)
-        self._app = Flask(__name__)
+
+        self._app = Flask(__name__, static_folder="../ui/dist", static_url_path="/")
 
         with self._app.app_context():
             current_app.plex_account = MyPlexAccount(plex_user, plex_password)
@@ -23,6 +27,7 @@ class TransplexThread(threading.Thread):
                 f"Connecting to PLEX server {plex_server} with user {plex_user}"
             )
 
+        self._app.add_url_rule("/", None, self.static_content)
         self._app.register_blueprint(test_resource)
         self.srv = make_server(host, port, self._app)
         self.ctx = self._app.app_context()

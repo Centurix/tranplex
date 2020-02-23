@@ -92,3 +92,137 @@ INFO:plexapi:Resource connection ERR (0s): http://172.104.57.184:8443?X-Plex-Tok
 INFO:plexapi:Connecting to Resource: https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
 INFO:root:Connecting to PLEX server CinePlex with user centurix
 INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 16:22:04] "GET / HTTP/1.1" 200 -
+INFO:root:Starting TransPLEX with False, 127.0.0.1, 5123
+INFO:plexapi:Testing 6 resource connections..
+ERROR:plexapi:http://172.104.180.126:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+INFO:plexapi:Resource connection OK (0s): https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): https://110-141-224-71.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (6s): https://172-104-180-126.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:8443?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): http://192.168.86.100:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): http://110.141.224.71:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection ERR (0s): http://172.104.180.126:8443?X-Plex-Token=<hidden>
+INFO:plexapi:Connecting to Resource: https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:root:Connecting to PLEX server CinePlex with user centurix
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 16:58:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 16:58:40] "GET /favicon.ico HTTP/1.1" 405 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 16:58:54] "GET /index.html HTTP/1.1" 405 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 16:58:54] "GET /favicon.ico HTTP/1.1" 405 -
+INFO:root:Starting TransPLEX with False, 127.0.0.1, 5123
+INFO:plexapi:Testing 6 resource connections..
+ERROR:plexapi:http://172.104.180.126:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+INFO:plexapi:Resource connection OK (0s): https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): https://110-141-224-71.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): https://172-104-180-126.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:8443?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): http://192.168.86.100:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): http://110.141.224.71:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection ERR (0s): http://172.104.180.126:8443?X-Plex-Token=<hidden>
+INFO:plexapi:Connecting to Resource: https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:root:Connecting to PLEX server CinePlex with user centurix
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 16:59:39] "GET / HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 16:59:40] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 16:59:47] "GET /index.html HTTP/1.1" 404 -
+INFO:root:Starting TransPLEX with False, 127.0.0.1, 5123
+INFO:plexapi:Testing 6 resource connections..
+ERROR:plexapi:http://172.104.180.126:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+INFO:plexapi:Resource connection OK (0s): https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): https://110-141-224-71.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (6s): https://172-104-180-126.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:8443?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): http://192.168.86.100:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): http://110.141.224.71:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection ERR (0s): http://172.104.180.126:8443?X-Plex-Token=<hidden>
+INFO:plexapi:Connecting to Resource: https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:root:Connecting to PLEX server CinePlex with user centurix
+ERROR:transplex.transplex_thread:Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/chris/.cache/pypoetry/virtualenvs/transplex-o705rcuz-py3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/chris/.cache/pypoetry/virtualenvs/transplex-o705rcuz-py3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/chris/.cache/pypoetry/virtualenvs/transplex-o705rcuz-py3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/chris/.cache/pypoetry/virtualenvs/transplex-o705rcuz-py3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/chris/.cache/pypoetry/virtualenvs/transplex-o705rcuz-py3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/chris/.cache/pypoetry/virtualenvs/transplex-o705rcuz-py3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: static_content() missing 1 required positional argument: 'path'
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 17:07:55] "GET / HTTP/1.1" 500 -
+INFO:root:Starting TransPLEX with False, 127.0.0.1, 5123
+INFO:plexapi:Testing 6 resource connections..
+ERROR:plexapi:http://172.104.180.126:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+INFO:plexapi:Resource connection OK (0s): https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): https://110-141-224-71.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): https://172-104-180-126.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:8443?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): http://192.168.86.100:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): http://110.141.224.71:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection ERR (0s): http://172.104.180.126:8443?X-Plex-Token=<hidden>
+INFO:plexapi:Connecting to Resource: https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:root:Connecting to PLEX server CinePlex with user centurix
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 17:08:26] "GET / HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 17:08:34] "GET /index.html HTTP/1.1" 404 -
+INFO:root:Starting TransPLEX with False, 127.0.0.1, 5123
+INFO:plexapi:Testing 6 resource connections..
+ERROR:plexapi:http://139.162.15.38:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+INFO:plexapi:Resource connection OK (0s): https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): https://110-141-224-71.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (1s): https://139-162-15-38.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:8443?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): http://192.168.86.100:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): http://110.141.224.71:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection ERR (0s): http://139.162.15.38:8443?X-Plex-Token=<hidden>
+INFO:plexapi:Connecting to Resource: https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:root:Connecting to PLEX server CinePlex with user centurix
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 17:09:07] "GET / HTTP/1.1" 404 -
+INFO:root:Starting TransPLEX with False, 127.0.0.1, 5123
+INFO:plexapi:Testing 6 resource connections..
+ERROR:plexapi:http://172.104.59.203:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+INFO:plexapi:Resource connection OK (0s): https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): https://110-141-224-71.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (2s): https://172-104-59-203.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:8443?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): http://192.168.86.100:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): http://110.141.224.71:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection ERR (0s): http://172.104.59.203:8443?X-Plex-Token=<hidden>
+INFO:plexapi:Connecting to Resource: https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:root:Connecting to PLEX server CinePlex with user centurix
+INFO:root:Starting TransPLEX with False, 127.0.0.1, 5123
+INFO:plexapi:Testing 6 resource connections..
+ERROR:plexapi:http://139.162.14.127:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+INFO:plexapi:Resource connection OK (0s): https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): https://110-141-224-71.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (2s): https://139-162-14-127.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:8443?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): http://192.168.86.100:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): http://110.141.224.71:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection ERR (0s): http://139.162.14.127:8443?X-Plex-Token=<hidden>
+INFO:plexapi:Connecting to Resource: https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:root:Connecting to PLEX server CinePlex with user centurix
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 17:10:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 17:10:27] "GET /css/chunk-vendors.2408c6c3.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 17:10:27] "GET /js/app.6e88c59a.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 17:10:27] "GET /js/chunk-vendors.be7e6411.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 17:10:27] "GET /js/about.522028d0.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 17:10:27] "GET /img/logo.63a7d78d.svg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 17:10:33] "GET /js/chunk-vendors.be7e6411.js.map HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 17:10:33] "GET /js/app.6e88c59a.js.map HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 17:10:36] "GET / HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 17:12:27] "GET /test HTTP/1.1" 200 -
+INFO:root:Starting TransPLEX with False, 127.0.0.1, 5123
+INFO:plexapi:Testing 6 resource connections..
+ERROR:plexapi:http://172.105.122.184:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+INFO:plexapi:Resource connection OK (0s): https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): https://110-141-224-71.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (6s): https://172-105-122-184.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:8443?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): http://192.168.86.100:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection OK (0s): http://110.141.224.71:32400?X-Plex-Token=<hidden>
+INFO:plexapi:Resource connection ERR (0s): http://172.105.122.184:8443?X-Plex-Token=<hidden>
+INFO:plexapi:Connecting to Resource: https://192-168-86-100.d0e6a50c23c54bcc8394cb08af09a162.plex.direct:32400?X-Plex-Token=<hidden>
+INFO:root:Connecting to PLEX server CinePlex with user centurix
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 20:37:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 20:37:28] "GET /js/app.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 20:37:28] "GET /js/chunk-vendors.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 20:37:33] "GET /favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 20:37:44] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 20:37:44] "GET /js/app.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 20:37:44] "GET /js/chunk-vendors.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 20:37:45] "GET /favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 23:34:40] "GET / HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2020 23:34:40] "GET /favicon.ico HTTP/1.1" 200 -
